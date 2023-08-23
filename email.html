@@ -1,28 +1,67 @@
 <html>
     <head>
         <title> Email page</title>
+        <link rel="stylesheet" href="./bootstrap.css">
     </head>
     <body>
-        <form> 
-        <label> NAME* :</label>
-        <input type="text" />
-        <label> EMAIL* :</label>
-        <input type="email" />
-        <label> PHONE* </label>
-        <input type=" phone number" /><br><br>
-        <label> SUBJECT*</label>
-        <input type="text" />
-        <label> SERVICES </label>
-        <select>
-            <option> --select one-- </option>
-            <option> Offline service</option>
-            <option> Online service</option>
-        </select><br><br>
-        <label> MESSAGE*</label>
-        <textarea name="" , id="", row="50",col="50"></textarea><br><br>
-        <button> SUBMIT </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label> NAME*</label>
+                                    <input type="text" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label> EMAIL*</label>
+                                    <input type="email" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label> PHONE*</label>
+                                    <input type="phone number" class="form control"/><br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="form-group">
+                                    <label> SUBJECT*</label>
+                                    <input type="text" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label> SERVICES</label>
+                                    <select>
+                                        <option> --please select--</option>
+                                        <option> 1. WEB DEVELOPMENT</option>
+                                        <option> 2. MOBILE DEVELOPMEMT</option>
+                                        <option> 3. APP DEVELOPMENT</option>
+                                    </select><br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label> MESSAGE*</label>
+                                    <teaxtarea rows="5" cols="30" class="form-control"></teaxtarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-warning">SUBMIT</button>
 
-        </form>
+
+                    </form>
+                </div>
+            </div>
+        </div>
         
         
     </body>
