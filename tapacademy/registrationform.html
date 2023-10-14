@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>registration form</title>
+    </head>
+    <body>
+        <h1>Course Registration Form</h1>
+        <form action="http://127.0.0.1.8000/registrtaion form/">
+            <fieldset>
+                <legend>Personal details</legend>
+                <table>
+                    <tr>
+                        <td><label>First name:</label></td>
+                        <td><input type="text" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Surname:</label></td>
+                        <td><input type="text" placeholder="Enter surname"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Mobile Number:</label></td>
+                        <td><input type="Telephone number" placeholder="Enter 10 digit number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email:</label></td>
+                        <td><input type="email" placehlder="Enter email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password:</label></td>
+                        <td><input type="password" required minlength="5"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Confirm passowrd:</label></td>
+                        <td><input type="password" required minlength="5"></td>
+                    </tr>
+                    <tr>
+                        <td><label>DOB</label></td>
+                        <td><input type="date" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td><input type="radio" name="gtype">Male<input type="radio" name="gtype">Female<input type="radio" name="gtype">Custom</td>
+                    </tr>
+                    <tr>
+                        <td><label>Select country</label></td>
+                        <td><select>
+                            <option>--Select country--</option>
+                            <option>INDIA</option>
+                            <option>USA</option>
+                            <option>CHINA</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset"></td>
+                    </tr>
+                </table>
+                
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Course details</legend>
+                <label>Select course</label>
+                <select>
+                    <option>--Select--</option>
+                    <option>Java Full Stack</option>
+                    <option>Python Full Stack</option>
+                    <option>MERN Full Stack</option>
+                </select><br><br>
+                <label>Delivery mode</label>
+                <input type="radio" name="dtype">Online
+                <input type="radio" name="dtype">Offline<br><br>
+                <label>Comments</label><br><br>
+                <textarea col="5" row="5"></textarea>
+            </fieldset>
+
+        </form>
+        <button>Submit</button>
+        
+    </body>
+</html>
