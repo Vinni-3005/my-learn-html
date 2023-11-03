@@ -1,0 +1,40 @@
+<!--In the above example, h1, p, div and p tag which is directly inside
+body tag is known as sibling, h2,p,p and h3 tag which is directly
+inside div tag is also known as sibling. These sibling which belongs
+to same parent is only known as General sibling. -->
+
+<!--In this example, we applied styling for p tag which are general
+sibling of h1 and h2 tag. The general sibling selector selects all
+elements that are siblings of a specified element. The combinator used
+for general sibling is ~.  -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+        <style>
+            h1~p{
+                background-color: orangered;
+            }
+            h2~p{
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>H1 outside</h1>
+        <p>p1 outside div</p>
+        <div>
+            <h2>H2 inside div</h2>
+            <p>p1 inside div</p>
+            <p>p2 inside div</p>
+            <h3>H3 inside div</h3>
+        </div>
+        <p>P2 outside div</p>
+    </body>
+</html>
