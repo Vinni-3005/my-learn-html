@@ -1,0 +1,12 @@
+.navbar {
+    background-color: rgb(228, 209, 116);
+}
+.container {
+    display : flex;
+    align-items : center;
+}
+.container > div {
+    display : flex;
+    align-items : center;
+    margin-right : 20px;
+}
