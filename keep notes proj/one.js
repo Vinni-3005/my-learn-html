@@ -27,15 +27,19 @@
             }  
         }
     }) 
+    //input lines for title and desc
+    const titleTag = document.querySelector("input");
+    const descTag = document.querySelector("textarea");
+
     const addNoteBtn = document.querySelector("#addNoteBtn");
     if(addNoteBtn){
         addNoteBtn.addEventListener("click", () => {
-            console.log("button clicked");
+            let noteTitle = titleTag.value;
+            noteDesc = descTag.value;
+            console.log(noteTitle,noteDesc);
         });
     }
 
-    const titleTag = document.querySelector("input");
-    const descTag = document.querySelector("textarea");
     
 
    
